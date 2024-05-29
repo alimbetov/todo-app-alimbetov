@@ -23,6 +23,16 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.app-devider {
+  background-color: #e2e6ed;
+  min-height: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
 
 .App-link {
   color: #61dafb;
@@ -35,4 +45,163 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.app-header {
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  justify-content: center; /* Centers the items horizontally */
+}
+
+.action-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px; /* Space between rows */
+  width: 200%; /* Each row takes full width */
+}
+
+.action-row p {
+  margin-right: 30px; /* Space between text and buttons */
+}
+
+
+
+
+.arrow-container {
+  display: flex;
+  align-items: center;
+}
+
+.right-arrow {
+  transform: rotate(45deg);
+}
+.left-arrow {
+  transform: rotate(-135deg);
+}
+.up-arrow {
+  transform: rotate(-45deg);
+}
+.down-arrow {
+  transform: rotate(135deg);
+}
+.top-narrow-arrow {
+  transform: rotate(-45deg) skew(-15deg, -15deg);
+}
+.top-wide-arrow {
+  transform: rotate(-45deg) skew(7deg, 7deg);
+}
+.top-left-arrow {
+  transform: rotate(-90deg) skew(-10deg, -10deg);
+}
+.top-right-arrow {
+  transform: rotate(0) skew(-10deg, -10deg);
+}
+.bottom-left-arrow {
+  transform: rotate(180deg) skew(-10deg, -10deg);
+}
+.bottom-right-arrow {
+  transform: rotate(90deg) skew(-10deg, -10deg);
+}
+
+.myActionButton {
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: #4299e1;
+  border-radius: 50px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 100;
+  color: white;
+  line-height: 26px;
+}
+
+.myAddButton {
+cursor: pointer;
+outline: 0;
+display: inline-block;
+font-weight: 40;
+line-height: 1.5;
+text-align: center;
+background-color: transparent;
+border: 1px solid transparent;
+padding: 6px 12px;
+font-size: 1rem;
+border-radius: .25rem;
+transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+color: #0d6efd;
+border-color: #0d6efd;
+:hover {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+}
+
+.myTask {
+  text-align: center;
+  background-color: #e2e6ed;
+  min-height: 10vh;
+  min-width: 50vh;
+  box-shadow: 0px 13px 27px -5px rgba(50,50,93,0.25) , 0px 8px 16px -8px rgba(0,0,0,0.3) , 0px -6px 16px -6px rgba(0,0,0,0.025);
+}
+
+.myModalTask {
+  text-align: center;
+  background-color: #dfe1e4;
+  min-height: 20vh;
+  min-width: 50vh;
+  max-width: 50vh;
+  box-shadow: 0px 13px 27px -5px rgba(50,50,93,0.25) , 0px 8px 16px -8px rgba(0,0,0,0.3) , 0px -6px 16px -6px rgba(0,0,0,0.025);
+}
+.myInputTex {
+  width: 90%;
+  height: 36px;
+  border-radius: 4px;
+  padding-left: 12px;
+  font-size: 14px;
+  font-weight: normal;
+  border: 1px solid rgb(137, 151, 155);
+  transition: border-color 150ms ease-in-out 0s;
+  outline: none;
+  color: rgb(33, 49, 60);
+  background-color: rgb(255, 255, 255);
+  padding-right: 12px;
+  :hover{
+      box-shadow: rgb(231 238 236) 0px 0px 0px 3px;
+  }
+
+}
+
+.mySate {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 5px;
+  transition-property: background-color,border-color,color,box-shadow,filter;
+  transition-duration: .3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 1px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  
+  color: #fff;
+  background-color: #e2e90c;
+  height: 1px;
+  :hover{
+      transform: scale(1.04);
+      background-color: #21e065;
+  }
+
 }
